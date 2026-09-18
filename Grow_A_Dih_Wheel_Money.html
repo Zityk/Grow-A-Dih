@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Grow A Dih</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at 50% -10%,#1a2945,#080d18 55%,#04070d);color:#f5f7ff;font-family:system-ui,-apple-system,Segoe UI,sans-serif}.app{max-width:1100px;margin:auto;padding:18px 14px 40px}.top{display:flex;justify-content:space-between;align-items:center;margin-bottom:14px}.logo{font-size:25px;font-weight:950}.logo span{color:#58e58a}.badge{font-size:11px;color:#aab7cf;border:1px solid #25344b;background:#0d1523;padding:7px 10px;border-radius:99px}.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}.stat,.card{background:linear-gradient(#121d2e,#0b1320);border:1px solid #22334b;border-radius:17px;box-shadow:0 18px 45px #0007}.stat{padding:11px 13px}.stat small,.sub{color:#8d9ab1;font-size:11px}.stat b{font-size:18px}.tabs{display:flex;gap:8px;margin:15px 0}.tab{flex:1;padding:11px;border-radius:12px;border:1px solid #26364d;background:#0c1421;color:#98a5bb;font-weight:900}.tab.active{color:#fff;background:#17263a;border-color:#3a5878}.page{display:none}.page.active{display:block}.grid{display:grid;grid-template-columns:1.15fr .85fr;gap:14px}.card{padding:17px}.head{display:flex;justify-content:space-between;align-items:end}.stage{color:#58e58a;font-weight:900}.progress{height:9px;background:#080d15;border:1px solid #1d2b3f;border-radius:99px;overflow:hidden;margin:12px 0}.progress i{display:block;height:100%;width:0;background:linear-gradient(90deg,#58e58a,#91ffb6);transition:.25s}.dihStage{height:270px;display:grid;place-items:center;position:relative;overflow:hidden}.dih{width:205px;height:155px;border-radius:48% 52% 47% 53%;background:linear-gradient(145deg,#c98b43,#9e602a);position:relative;box-shadow:inset -15px -18px 30px #66350c55,0 22px 35px #0008}.dih:before,.dih:after{content:"";position:absolute;width:21px;height:30px;background:#111722;border-radius:50%;top:54px}.dih:before{left:57px}.dih:after{right:57px}.mouth{position:absolute;width:56px;height:26px;border-bottom:6px solid #171a22;border-radius:0 0 50px 50px;left:75px;top:88px}.leaf{position:absolute;width:70px;height:30px;border-radius:100% 0 100% 0;background:#51d878;top:-16px;left:75px;transform:rotate(-18deg)}.click{text-align:center}.clickBtn{width:min(440px,100%);padding:16px;border:0;border-radius:16px;background:linear-gradient(#70f39d,#30d875);box-shadow:0 8px 0 #168f49,0 18px 35px #1bd06a33;font-size:20px;font-weight:950}.clickBtn:active{transform:translateY(6px);box-shadow:0 2px 0 #168f49}.power{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-top:14px}.buy{border:1px solid #35516e;background:#142337;color:#fff;border-radius:10px;padding:9px 12px;font-weight:900}.buy:disabled{opacity:.4}.wheelWrap{height:225px;display:grid;place-items:center;position:relative}.wheel{width:190px;height:190px;border-radius:50%;border:8px solid #26384f;background:conic-gradient(#ff5b67 0 16.6%,#55a8ff 16.6% 33.2%,#58e58a 33.2% 49.8%,#ffd35a 49.8% 66.4%,#a56cff 66.4% 83%,#fff 83%);transition:transform 3.8s cubic-bezier(.15,.72,.16,1);box-shadow:0 15px 40px #0009}.wheel:after{content:"";position:absolute;width:52px;height:52px;border-radius:50%;background:#101827;border:5px solid #fff}.pointer{position:absolute;top:0;z-index:2;border-left:10px solid transparent;border-right:10px solid transparent;border-bottom:23px solid #fff}.labels{position:absolute;inset:0;font-size:11px;font-weight:950}.labels span{position:absolute;width:75px;text-align:center}.a{top:25px;left:58px}.b{top:67px;right:8px}.c{bottom:30px;right:20px}.d{bottom:30px;left:18px}.e{top:67px;left:2px}.f{bottom:5px;left:58px}.spin{width:100%;padding:12px;border:0;border-radius:11px;background:#fff;color:#08101a;font-weight:950}.risk{margin-top:14px;border-color:#5b2630;background:linear-gradient(#21131a,#120d13)}.risk button{width:100%;padding:11px;border:0;border-radius:10px;background:#ff5260;color:#24070b;font-weight:950}.shopGrid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}.item{background:#0b1320;border:1px solid #22334a;border-radius:14px;padding:15px}.icon{font-size:36px}.item h3{margin:3px 0}.item p{font-size:12px;color:#8d9ab1;min-height:32px}.item button{width:100%}.share{display:grid;gap:8px}.share input{width:100%;background:#080e18;border:1px solid #293b54;color:#fff;border-radius:9px;padding:10px}.float{position:fixed;pointer-events:none;color:#7bf4a1;font-weight:950;animation:float .7s forwards;z-index:30}@keyframes float{to{transform:translateY(-60px);opacity:0}}@keyframes pop{45%{transform:scale(1.06) rotate(-1deg)}}.pop{animation:pop .16s}.modal{position:fixed;inset:0;background:#02040bdd;backdrop-filter:blur(9px);display:none;align-items:center;justify-content:center;padding:18px;z-index:20}.modal.show{display:flex}.modalBox{width:min(500px,100%);background:#0d1523;border:1px solid #31445e;border-radius:20px;padding:20px;text-align:center}.reward{font-size:29px;font-weight:950;margin:18px}.skip{padding:10px 16px;border-radius:10px;border:1px solid #42556f;background:#172538;color:#fff;font-weight:900}.toast{position:fixed;bottom:20px;left:50%;transform:translateX(-50%);background:#101c2d;border:1px solid #354b68;border-radius:10px;padding:10px 14px;opacity:0;transition:.2s;z-index:50}.toast.show{opacity:1}@media(max-width:760px){.stats{grid-template-columns:repeat(2,1fr)}.grid{grid-template-columns:1fr}.shopGrid{grid-template-columns:1fr}.dihStage{height:225px}}
+</style>
+</head>
+<body>
+<div class="app">
+<div class="top"><div class="logo">Grow <span>A Dih</span></div><div class="badge">click • evolve • upgrade</div></div>
+<div class="stats">
+<div class="stat"><small>💵 MONEY</small><b id="money">$0</b></div>
+<div class="stat"><small>💎 GEMS</small><b id="gems">0</b></div>
+<div class="stat"><small>⚡ POWER</small><b id="power">1</b></div>
+<div class="stat"><small>🌱 EVOLUTION</small><b id="evo">0</b></div>
+</div>
+<div class="tabs"><button class="tab active" data-page="farm">🌱 FARM</button><button class="tab" data-page="shop">🛒 SHOP</button></div>
+
+<section id="farm" class="page active"><div class="grid"><div>
+<div class="card">
+<div class="head"><div><div class="sub">NEXT EVOLUTION</div><h2 id="nextName">Baby Dih</h2></div><div class="stage" id="stage">STAGE 0</div></div>
+<div class="progress"><i id="bar"></i></div><div class="sub" id="progressText">0 / 1,000 clicks • +10 💎</div>
+<div class="dihStage" id="dihStage"><div class="dih" id="dih"><div class="leaf"></div><div class="mouth"></div></div></div>
+<div class="click"><button class="clickBtn" id="clickBtn">CLICK +$1</button><div class="sub" style="margin-top:9px">Every click grows your Dih and charges the Lucky Wheel.</div></div>
+<div class="power"><div><b id="powerName">Power +1</b><div class="sub">Next upgrade</div></div><button class="buy" id="powerBuy">$75</button></div>
+</div></div>
+
+<div>
+<div class="card"><div class="head"><div><div class="sub">LUCKY WHEEL</div><h2>Spin for rewards</h2></div><b id="wheelLevel">LVL 0</b></div>
+<div class="sub" id="wheelProgress">200 clicks until spin</div>
+<div class="wheelWrap"><div class="pointer"></div><div class="wheel" id="wheel"><div class="labels"><span class="a">MISS</span><span class="b">$250</span><span class="c">+500<br>GROWTH</span><span class="d">$500</span><span class="e">JACKPOT</span><span class="f">$1000</span></div></div></div>
+<button class="spin" id="spinBtn" disabled>SPIN</button>
+<div class="power"><div><b>Wheel upgrade</b><div class="sub">Needs fewer clicks</div></div><button class="buy" id="wheelBuy">$250</button></div>
+</div>
+<div class="card risk"><div class="head"><div><div class="sub">RISK IT</div><h3>Try to double your stake</h3></div><b id="stake">$250</b></div><div class="sub" style="margin:8px 0 12px">Virtual in-game currency only.</div><button id="riskBtn">RISK IT</button></div>
+</div></div></section>
+
+<section id="shop" class="page"><div class="card"><div class="sub">SHOP</div><h2>Make your Dih special</h2><div class="shopGrid">
+<div class="item"><div class="icon">🫐</div><h3>Berry Dih</h3><p>Blueberry-style skin.</p><button class="buy" data-skin="berry" data-cost="100">100 💎</button></div>
+<div class="item"><div class="icon">🌟</div><h3>Golden Dih</h3><p>Shiny golden skin.</p><button class="buy" data-skin="gold" data-cost="250">250 💎</button></div>
+<div class="item"><div class="icon">🕳️</div><h3>Void Dih</h3><p>Dark void skin.</p><button class="buy" data-skin="void" data-cost="500">500 💎</button></div>
+<div class="item"><div class="icon">❄️</div><h3>Ice Dih</h3><p>Frozen cyan skin.</p><button class="buy" data-skin="ice" data-cost="750">750 💎</button></div>
+<div class="item"><div class="icon">🤖</div><h3>Auto Clicker</h3><p id="autoText">Automatically clicks for you.</p><button class="buy" id="autoBuy">$500</button></div>
+<div class="item"><div class="icon">📤</div><h3>Send to Friend</h3><p>Paste your public game URL.</p><div class="share"><input id="gameUrl" placeholder="https://..."><button class="buy" id="shareBtn">SHARE GAME</button></div></div>
+</div></div></section>
+</div>
+
+<div class="modal" id="modal"><div class="modalBox"><div class="sub">LUCKY WHEEL RESULT</div><div class="reward" id="reward">?</div><button class="skip" id="skipBtn">SKIP ANIMATION</button></div></div><div class="toast" id="toast"></div>
+
+<script>
+const $=id=>document.getElementById(id);
+let s={money:0,gems:0,power:1,evo:0,clicks:0,stage:0,auto:0,wheelLevel:0,wheelCharge:0,wheelReady:false,stake:250,skin:"normal",powerLevel:0};
+const evoReq=[1000,5000,15000,50000,150000,500000,1500000,5000000],evoReward=[10,20,35,60,100,175,300,500];
+const powerCosts=[75,150,300,1000,3000,10000],powerValues=[2,5,15,30,75,150];
+const money=n=>"$"+Math.floor(n).toLocaleString();
+function toast(t){let e=$("toast");e.textContent=t;e.classList.add("show");clearTimeout(window.tt);window.tt=setTimeout(()=>e.classList.remove("show"),1400)}
+function render(){
+$("money").textContent=money(s.money);$("gems").textContent=s.gems.toLocaleString();$("power").textContent=s.power;$("evo").textContent=s.evo.toLocaleString();$("stage").textContent="STAGE "+s.stage;
+let req=evoReq[s.stage]??Infinity,prev=s.stage?evoReq[s.stage-1]:0;$("bar").style.width=Math.max(0,Math.min(100,(s.clicks-prev)/(req-prev)*100))+"%";
+$("progressText").textContent=s.stage>=evoReq.length?"MAX EVOLUTION":`${s.clicks.toLocaleString()} / ${req.toLocaleString()} clicks • +${evoReward[s.stage]??0} 💎`;
+$("nextName").textContent=s.stage==0?"Baby Dih":s.stage==1?"Big Dih":s.stage==2?"Mega Dih":s.stage==3?"Ancient Dih":s.stage>=4?"Cosmic Dih":"Evolved Dih";
+$("powerName").textContent=s.powerLevel<powerCosts.length?`Power +${powerValues[s.powerLevel]-s.power+1}`:"MAX POWER";$("powerBuy").textContent=s.powerLevel<powerCosts.length?money(powerCosts[s.powerLevel]):"MAX";$("powerBuy").disabled=s.powerLevel>=powerCosts.length||s.money<powerCosts[s.powerLevel];
+let need=Math.max(60,200-s.wheelLevel*20);$("wheelProgress").textContent=s.wheelReady?"READY — spin now":`${Math.max(0,need-s.wheelCharge)} clicks until spin`;$("spinBtn").disabled=!s.wheelReady;$("wheelLevel").textContent="LVL "+s.wheelLevel;
+let wc=250*Math.pow(2,s.wheelLevel);$("wheelBuy").textContent=money(wc);$("wheelBuy").disabled=s.money<wc;
+$("stake").textContent=money(s.stake);$("autoText").textContent=`Level ${s.auto} • ${s.auto?"+ "+s.auto+" click"+(s.auto==1?"":"s")+" / sec":"No autoclicks yet."}`;$("autoBuy").textContent=money(500*Math.max(1,s.auto));$("autoBuy").disabled=s.money<500*Math.max(1,s.auto);
+document.querySelectorAll("[data-skin]").forEach(b=>{b.disabled=s.gems<+b.dataset.cost||s.skin===b.dataset.skin});
+$("dih").style.background={normal:"linear-gradient(145deg,#c98b43,#9e602a)",berry:"linear-gradient(145deg,#68a9ff,#354dba)",gold:"linear-gradient(145deg,#ffe27a,#bd7b13)",void:"linear-gradient(145deg,#38384e,#090912)",ice:"linear-gradient(145deg,#b8f5ff,#3aa9d8)"}[s.skin];
+}
+function clickAnim(amount){let d=$("dih");d.classList.remove("pop");void d.offsetWidth;d.classList.add("pop");let r=$("dihStage").getBoundingClientRect(),f=document.createElement("div");f.className="float";f.textContent="+$"+amount;f.style.left=(r.left+r.width/2+(Math.random()*70-35))+"px";f.style.top=(r.top+r.height*.45)+"px";document.body.appendChild(f);setTimeout(()=>f.remove(),700)}
+function grow(n=1){s.money+=n*s.power;s.clicks+=n;s.wheelCharge+=n;clickAnim(n*s.power);while(s.stage<evoReq.length&&s.clicks>=evoReq[s.stage]){s.gems+=evoReward[s.stage];s.stage++;toast("✨ Evolution unlocked! +"+evoReward[s.stage-1]+" gems")}let need=Math.max(60,200-s.wheelLevel*20);if(s.wheelCharge>=need){s.wheelReady=true;s.wheelCharge=need}render()}
+$("clickBtn").onclick=()=>grow(1);
+$("powerBuy").onclick=()=>{if(s.powerLevel<powerCosts.length&&s.money>=powerCosts[s.powerLevel]){s.money-=powerCosts[s.powerLevel];s.power=powerValues[s.powerLevel];s.powerLevel++;toast("⚡ Power upgraded!");render()}};
+$("wheelBuy").onclick=()=>{let c=250*Math.pow(2,s.wheelLevel);if(s.money>=c){s.money-=c;s.wheelLevel++;toast("🎡 Wheel upgraded!");render()}};
+document.querySelectorAll(".tab").forEach(b=>b.onclick=()=>{document.querySelectorAll(".tab").forEach(x=>x.classList.remove("active"));b.classList.add("active");document.querySelectorAll(".page").forEach(x=>x.classList.remove("active"));$(b.dataset.page).classList.add("active")});
+document.querySelectorAll("[data-skin]").forEach(b=>b.onclick=()=>{let c=+b.dataset.cost;if(s.gems>=c&&s.skin!==b.dataset.skin){s.gems-=c;s.skin=b.dataset.skin;toast("✨ Skin equipped!");render()}});
+$("autoBuy").onclick=()=>{let c=500*Math.max(1,s.auto);if(s.money>=c){s.money-=c;s.auto++;toast("🤖 Autoclicker upgraded!");render()}};
+let spinning=false,finalReward=0;const rewards=[["MISS",()=>toast("💨 Miss!")],["$250",()=>s.money+=250],["$500",()=>s.money+=500],["+500 GROWTH",()=>grow(500)],["JACKPOT $2500",()=>s.money+=2500],["$1000",()=>s.money+=1000]];
+function startSpin(){if(!s.wheelReady||spinning)return;spinning=true;$("modal").classList.add("show");$("reward").textContent="SPINNING…";finalReward=Math.floor(Math.random()*rewards.length);$("wheel").style.transform=`rotate(${2160+finalReward*60+Math.random()*40}deg)`;setTimeout(finishSpin,3900)}
+function finishSpin(){if(!spinning)return;spinning=false;s.wheelReady=false;s.wheelCharge=0;let r=rewards[finalReward];$("reward").textContent=r[0];r[1]();render()}
+$("spinBtn").onclick=startSpin;$("skipBtn").onclick=finishSpin;
+$("riskBtn").onclick=()=>{if(s.money<s.stake){toast("Not enough in-game money.");return}if(Math.random()<.55){s.money+=s.stake;s.stake=Math.round(s.stake*1.55);toast("🔥 WIN! Stake increased.")}else{s.money-=s.stake;s.stake=250;toast("💥 LOST! Stake reset.")}render()};
+$("shareBtn").onclick=async()=>{let url=$("gameUrl").value.trim();if(!url){toast("Paste your public game link first.");return}try{if(navigator.share)await navigator.share({title:"Grow A Dih",text:"🌱 Try Grow A Dih! My evolution is "+s.evo+".",url});else{await navigator.clipboard.writeText(url);toast("🔗 Game link copied!")}}catch(e){}};
+setInterval(()=>{if(s.auto)grow(s.auto)},1000);render();
+</script>
+</body>
+</html>
